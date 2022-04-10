@@ -24,6 +24,11 @@ const routes = [
     path: '/voting',
     name: 'voting',
     component: () => import('../views/VotingView.vue')
+  },
+  {
+    path: '/chart',
+    name: 'chart',
+    component: () => import('../views/ChartView.vue')
   }
 ]
 

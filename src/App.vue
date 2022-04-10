@@ -1,21 +1,21 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-    >
+    <v-navigation-drawer v-model="drawer" app>
       <h3 class="menu-item">App Menu</h3>
       <div class="menu-item">
-        <router-link to="/">Home</router-link> 
+        <router-link to="/">Home</router-link>
       </div>
       <div class="menu-item">
-        <router-link to="/signin">Sign In</router-link> 
+        <router-link to="/signin">Sign In</router-link>
       </div>
       <div class="menu-item">
-       <router-link to="/about">About</router-link> 
+        <router-link to="/about">About</router-link>
       </div>
       <div class="menu-item">
-       <router-link to="/voting">Voting</router-link> 
+        <router-link to="/voting">Voting</router-link>
+      </div>
+      <div class="menu-item">
+        <router-link to="/chart">Chart</router-link>
       </div>
     </v-navigation-drawer>
 
@@ -33,7 +33,7 @@
 <script>
 export default {
   data: () => ({ drawer: null }),
-};
+}
 </script>
 
 <style scoped>
